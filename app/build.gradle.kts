@@ -1,6 +1,6 @@
 plugins {
     id("com.android.application")
-    id("com.google.gms.google-services") version "4.3.15" apply false
+    id("com.google.gms.google-services")
 //добавление, возможно нужно будет поменять версию на   "4.4.0"
 }
 
@@ -39,7 +39,7 @@ dependencies {
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation(platform("com.google.firebase:firebase-bom:32.2.2"))
-    implementation("com.google.firebase:firebase-auth:22.3.1")
+    implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore:24.10.1")
     implementation("com.google.firebase:firebase-core:21.1.1")
     implementation("com.firebaseui:firebase-ui-database:8.0.0")
