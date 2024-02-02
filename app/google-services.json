@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1098158284797",
+    "project_id": "appbd-fadef",
+    "storage_bucket": "appbd-fadef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1098158284797:android:bd632ccedf6a9c42f54394",
+        "android_client_info": {
+          "package_name": "com.delloon.appbd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDozIe6qBpwN6fXHjDvRlpv4D0R3L5mJQo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
