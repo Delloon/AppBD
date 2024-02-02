@@ -6,6 +6,7 @@ public class Message {
     private String userName;
     private String textMessage;
     private long messageTime;
+    String text;
 
     public Message(String userName, String textMessage) {
         this.userName = userName;
@@ -36,4 +37,6 @@ public class Message {
     public void setMessageTime(long messageTime) {
         this.messageTime = messageTime;
     }
+
+    
 }

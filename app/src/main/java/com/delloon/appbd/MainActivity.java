@@ -14,12 +14,14 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.database.FirebaseListAdapter;
 import com.firebase.ui.database.FirebaseListOptions;
 import com.google.android.material.snackbar.Snackbar;
-import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -51,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
                 if(textField.getText().toString() == "")
                     return;
                 FirebaseDatabase.getInstance().getReference().push().setValue(new Message(
-                        FirebaseAuth.getInstance.getCurrentUser().getEmail(),
-                        textField.getText.toString()
+                        FirebaseAuth.getInstance().getCurrentUser().getEmail(),
+                        textField.getText().toString()
                 ));
                 textField.setText("");
             }
@@ -95,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                 mess_user.setText(model.getUserName());
                 mess_time.setText(DateFormat.format("dd-MM-yyyy HH:mm:ss",
                         model.getMessageTime()));
-                mess_txt.setText(model.getText());
+                mess_txt.setText(model.getTextMessage());
             }
         };
         listOfMessages.setAdapter(adapter);
